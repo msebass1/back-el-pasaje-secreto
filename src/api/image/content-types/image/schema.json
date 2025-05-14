@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "images",
+  "info": {
+    "singularName": "image",
+    "pluralName": "images",
+    "displayName": "Image"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "ImageList": {
+      "type": "json"
+    }
+  }
+}
