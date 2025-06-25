@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sessions",
+  "info": {
+    "singularName": "session",
+    "pluralName": "sessions",
+    "displayName": "Session"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "date": {
+      "type": "date"
+    },
+    "time": {
+      "type": "string"
+    },
+    "max_capacity": {
+      "type": "integer",
+      "default": 10
+    },
+    "capacity_occupation": {
+      "type": "integer",
+      "default": 10
+    },
+    "reservations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::reservation.reservation"
+    }
+  }
+}
